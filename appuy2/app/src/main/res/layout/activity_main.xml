@@ -1,0 +1,462 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/app_backg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            >
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/title_color"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/uy2_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_name"
+                android:layout_marginTop="4dp"
+                android:text="@string/uy2_message"
+                android:textColor="@color/subtitle_color"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uy2_message"
+                android:text="@string/init_message"
+                android:textColor="@color/subtitle_color"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/logo_uy2" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginHorizontal="0dp"
+            android:paddingRight="5dp"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                android:id="@+id/access_site"
+                android:clickable="true"
+                app:cardBackgroundColor="#FFFFFF"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="74dp"
+                        android:layout_height="57dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/site_uy2"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/uy2_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:clickable="true"
+                android:id="@+id/insc_ligne">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/insc_ligne"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/register_site"
+                        android:textColor="@color/colorLiens"
+                        android:textSize="12sp"
+                        android:clickable="false"></TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/fseg"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/fseg"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/fseg_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/fsjp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/fsjp"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/fsjp_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/esstic"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/esstic"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/esstic_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/iric"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/iric"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/iric_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/iford"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/iford"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/iford_site"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:clickable="true"
+                android:id="@+id/e_learning"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/e_learning"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"></ImageView>
+
+                    <TextView
+                        android:layout_below="@+id/lien_uy2_site"
+                        android:layout_marginTop="10dp"
+                        android:text="E-learning"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorLiens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/copyright"
+                android:text="@string/copyright"
+                android:textSize="17sp"
+                android:textColor="@color/colorLiens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
